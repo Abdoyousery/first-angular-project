@@ -1,0 +1,15 @@
+.active-link {
+  background-color: var(--main-color) !important;
+  border-radius: 5px;
+}
+.bg-main-color {
+  background-color: #2c3e50 !important;
+}
+.scrolled{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  transition: all .6s;
+}
+.py-4{
+  transition: all .6s !important;
+}

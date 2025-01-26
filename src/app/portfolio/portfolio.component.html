@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="height-in text-center">
+    <div class="d-flex justify-content-center align-items-center flex-column">
+      <h1 class="fw-bolder text-uppercase">portfolio component</h1>
+      <div class="ms-5 me-5 d-flex justify-content-center align-items-center">
+        <div class="line me-3 bg-dark"></div>
+        <i class="fa-solid fa-star"></i>
+        <div class="bg-dark ms-3 line"></div>
+      </div>
+    </div>
+    <div class="row g-5 my-4">
+      @for (item of arrImages; track $index) {
+
+      <div class="col-md-6 col-lg-4">
+        <div
+          class="inner rounded overflow-hidden position-relative"
+          (click)="modalimg = item.src; modalview = false"
+        >
+          <img [src]="item.src" alt="" class="w-100" />
+          <div
+            class="layer position-absolute d-flex align-items-center justify-content-center"
+          >
+            <i class="fa-solid fa-plus text-white fa-6x"></i>
+          </div>
+        </div>
+      </div>
+      }
+    </div>
+
+    <div
+      class="mymodal position-fixed fixed-top top-0 bottom-0 start-0 end-0 d-flex align-items-center justify-content-center"
+      [class.d-none]="modalview"
+      (click)="closemodal($event, img)"
+    >
+      <img
+        #img
+        [src]="modalimg"
+        alt=""
+        class="position-relative"
+        class="w-600"
+      />
+    </div>
+  </div>
+</div>

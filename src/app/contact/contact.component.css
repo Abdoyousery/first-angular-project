@@ -1,0 +1,23 @@
+.height-in {
+  padding-top: 150px;
+}
+input {
+  border: 0;
+  border-bottom: #dee2e6 1px solid;
+  outline: none;
+}
+label {
+  color: var(--main-color);
+  margin-bottom: 7px;
+  transition: 0.6s all;
+}
+.top-400{
+  top: 400px ;
+}
+
+button{
+  background-color: var(--main-color);
+}
+button:hover{
+  background-color: #1abc9cc9;
+}

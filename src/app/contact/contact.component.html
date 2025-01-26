@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="height-in text-center">
+    <div class="d-flex justify-content-center align-items-center flex-column">
+      <h1 class="fw-bolder text-uppercase">conatct section</h1>
+      <div class="ms-5 me-5 d-flex justify-content-center align-items-center">
+        <div class="line me-3 bg-dark"></div>
+        <i class="fa-solid fa-star"></i>
+        <div class="bg-dark ms-3 line"></div>
+      </div>
+    </div>
+    <form action=" " class="my-5">
+      <div class="name text-start w-50 mx-auto my-5 overflow-hidden">
+        <label for="" class="position-relative top-400 fw-bold" [class.top-0]="username.length>0 ">UserName : </label>
+        <input type="text" name="username" placeholder="UserName"class=" shadow-none form-control" [(ngModel)]="username"/>
+      </div>
+      <div class="name text-start w-50 mx-auto my-5 overflow-hidden">
+        <label for="" class="position-relative top-400 fw-bold" [class.top-0]="userage.length>0 ">Userage : </label>
+        <input type="text" name="userage" placeholder="Userage"class=" shadow-none form-control" [(ngModel)]="userage"/>
+      </div>
+      <div class="name text-start w-50 mx-auto my-5 overflow-hidden">
+        <label for="" class="position-relative top-400 fw-bold" [class.top-0]="useremail.length>0 ">Useremail : </label>
+        <input type="text" name="useremail" placeholder="Useremail"class=" shadow-none form-control" [(ngModel)]="useremail"/>
+      </div>
+      <div class="name text-start w-50 mx-auto my-5 overflow-hidden">
+        <label for="" class="position-relative top-400 fw-bold" [class.top-0]="userpass.length>0 ">UserPassword : </label>
+        <input type="text" name="userpass" placeholder="UserPassword"class=" shadow-none form-control" [(ngModel)]="userpass"/>
+      </div>
+     
+      <button class="btn text-white fw-bold text-capitalize"> send message</button>
+
+    </form>
+  </div>
+</div>
