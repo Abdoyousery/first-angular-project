@@ -8,7 +8,6 @@ input {
 }
 label {
   color: var(--main-color);
-  margin-bottom: 7px;
   transition: 0.6s all;
 }
 .top-400{
